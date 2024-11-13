@@ -1,0 +1,54 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.app__content {
+  display: flex;
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-content__button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e57373;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Медиа-запрос для скрытия Sidebar при ширине 768px и меньше */
+@media (max-width: 768px) {
+  .app__content {
+    flex-direction: column; /* Основной контент будет идти по вертикали */
+  }
+
+  .sidebar {
+    display: none; /* Скрываем Sidebar */
+  }
+}

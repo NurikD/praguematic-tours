@@ -1,0 +1,24 @@
+.sidebar {
+    width: 200px; /* Ширина боковой панели */
+    padding: 20px;
+    background-color: #fff;
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1rem;
+      color: #333;
+    }
+  
+    &__item {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #e57373; /* Цвет при наведении */
+      }
+    }
+  }
+  

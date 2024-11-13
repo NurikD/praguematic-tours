@@ -1,0 +1,133 @@
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url('../assets/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20vw; /* Общий отступ */
+
+    &__title {
+        font-size: 3vw;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        line-height: 1.2;
+        position: absolute;
+        top: 5%;
+        left: 24vw;
+    }
+
+    &__description {
+        font-size: 1.2vw;
+        color: #555;
+        max-width: 35vw;
+        line-height: 1.5;
+        margin-top: 1rem;
+        position: absolute;
+        top: 25%;
+        right: 24vw;
+    }
+
+    &__button {
+        background-color: #e57373;
+        color: #fff;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 45%;
+        right: 37vw;
+
+        &:hover {
+            background-color: #cc5252;
+        }
+    }
+}
+
+/* Адаптивность для экранов 1024px и меньше */
+@media (max-width: 1025px) {
+    .hero-section {
+        height: 35vh;
+        padding-left: 10vw;
+        background-size: contain;
+
+        &__title {
+            font-size: 3.2vw;
+            top: 13%;
+            left: 20vw;
+        }
+
+        &__description {
+            display: none
+        }
+
+        &__button {
+            top: 40%;
+            right: 35vw;
+            font-size: 1.2vw;
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+/* Адаптивность для экранов 768px и меньше */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+        padding-left: 5vw;
+        background-size: contain;
+
+        &__title {
+            font-size: 3.2vw;
+            top: 15%;
+            left: 24vw;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__button {
+            top: 45%;
+            right: 35vw;
+            font-size: 2vw;
+            padding: 0.5rem 0.8rem;
+        }
+    }
+}
+
+/* Адаптивность для экранов 480px и меньше */
+@media (max-width: 431px) {
+    .hero-section {
+        height: 22vh;
+        padding-left: 15vw;
+        background-size: contain;
+        margin-bottom: 17%;
+
+        &__title {
+            font-size: 4.5vw;
+            top: 5%;
+            left: 24vw;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__button {
+            margin-top: 30%; 
+            align-self: center; 
+            font-size: 5vw;
+            padding: 0.5rem 0.8rem;
+            right: 29vw;
+        }
+    }
+}

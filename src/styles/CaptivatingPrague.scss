@@ -1,0 +1,109 @@
+/* src/components/CaptivatingPrague.scss */
+
+.captivating-prague {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+  
+    .content {
+      max-width: 600px;
+  
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 1rem;
+      }
+    }
+  
+    .image-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      img {
+        width: 320px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+  
+      .image-caption {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.8rem;
+        color: #333;
+        margin-top: 5px;
+  
+        span:last-child {
+          text-align: right;
+        }
+      }
+  
+      p {
+        font-style: italic;
+        color: #888;
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  
+  // Адаптивность для разных экранов
+  @media (max-width: 992px) {
+    .captivating-prague {
+      padding: 20px;
+      .content {
+        max-width: 500px;
+      }
+      .image-card {
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .captivating-prague {
+      flex-direction: column;
+      align-items: flex-start;
+  
+      .content {
+        max-width: 100%;
+      }
+  
+      .image-card {
+        margin-left: 0;
+        margin-top: 20px;
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .captivating-prague {
+      padding: 10px;
+  
+      .content h2 {
+        font-size: 1.5rem;
+      }
+  
+      .content p {
+        font-size: 0.9rem;
+      }
+  
+      .image-card img {
+        width:300px;
+      }
+    }
+  }
+  
